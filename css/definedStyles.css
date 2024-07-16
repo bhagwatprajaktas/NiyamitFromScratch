@@ -1,0 +1,118 @@
+i{
+    font-style: normal;
+}
+
+
+.fa-map-marker-alt:before {
+    content: "\1F588";
+}
+
+.fa-clock:before {
+    content: "\1F550";
+}
+
+
+
+.fa-facebook-f:before {
+    content: "\1D453";
+}
+
+.fa-twitter:before {
+    content: "\1D461";
+}
+
+.fa-linkedin-in:before {
+    content: "\33D1";
+}
+
+.fa-youtube:before {
+    content: "\25B6";
+}
+
+.fa-whatsapp:before {
+    content: "\2800";
+}
+
+.bi-envelope::before {
+    content: "\1F582";
+}
+
+.bi-arrow-up::before {
+    content: "\f148";
+}
+
+.fa-phone-alt:before {
+    content: "\f879";
+}
+
+.fa-envelope:before {
+    content: "\f0e0";
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: rgba(255, 255, 255, .5);
+    margin-right: 10px;
+}
+.bi-telephone-inbound::before {
+    content: "\1F57B";
+}
+.bi-chat-left-quote::before {
+    content: "\f250";
+}
+.bi-clock::before {
+    content: "\f293";
+}
+
+.bi-geo-alt::before {
+    content: "\f3e8";
+}
+.bi-heart-pulse::before {
+    content: "\f76f";
+}
+.bi-lungs::before {
+    content: "\f800";
+}
+.bi-virus::before {
+    content: "\f827";
+}
+.bi-capsule-pill::before {
+    content: "\f7de";
+}
+.bi-capsule::before {
+    content: "\f7df";
+}
+.bi-prescription2::before {
+    content: "\f80b";
+}
+.bi-clipboard2-pulse::before {
+    content: "\f730";
+}
+.bi-file-medical::before {
+    content: "\f3a1";
+}
+.bi-person-plus::before {
+    content: "\f4dd";
+}
+.bi-check-all::before {
+    content: "\f269";
+}
+.bi-award::before {
+    content: "\1f948";
+}
+.bi-people::before {
+    content: "\f4d0";
+}
+.bi-cash-coin::before {
+    content: "\f632";
+}
+.bi-headphones::before {
+    content: "\f413";
+}
+.bi-phone::before {
+    content: "\f4e7";
+}
+
