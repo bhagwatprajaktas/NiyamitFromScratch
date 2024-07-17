@@ -154,7 +154,7 @@
             <div class="row contact-info position-relative g-0 mb-5">
                 <div class="col-lg-6">
                     <a href="tel:+0123456789" class="d-flex justify-content-lg-center bg-primary p-4">
-                        <div class="icon-box-light flex-shrink-0">
+                        <div class="flex-shrink-0">
                             <i class="bi bi-phone text-dark"></i>
                         </div>
                         <div class="ms-3">
@@ -165,7 +165,7 @@
                 </div>
                 <div class="col-lg-6">
                     <a href="mailto:niyamithealth@gmail.com" class="d-flex justify-content-lg-center bg-primary p-4">
-                        <div class="icon-box-light flex-shrink-0">
+                        <div class="flex-shrink-0">
                             <i class="bi bi-envelope text-dark"></i>
                         </div>
                         <div class="ms-3">
@@ -304,10 +304,6 @@
                 <div class="col-md-6 text-center text-md-start">
                     <p class="mb-0">&copy; <a href="#">Niyamit Health Diagnostic</a>. All Rights Reserved.</p>
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    <p class="mb-0">Designed by <a href="https://htmlcodex.com">HTML Codex</a></p>
-                </div>
             </div>
         </div>
     </div>
@@ -329,30 +325,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script>
-        function handleSubmit(event) {
-            event.preventDefault();
-            const status = document.getElementById('status');
-            const formData = new FormData(document.getElementById('contact-form'));
-
-            fetch('https://script.google.com/macros/s/AKfycbx9bontjvaT1m9UzJQiag2dEzs_SmvuXm0aUhbPHnvHivBlRbF4y01vCqprNX8grBbu3w/exec', {
-                method: 'POST',
-                body: formData
-            })
-                .then(response => response.text())
-                .then(text => {
-                    status.textContent = 'Message sent successfully!';
-                    status.style.color = 'green';
-                    status.style.paddingTop = '20px';
-                    document.getElementById('contact-form').reset();
-                })
-                .catch(error => {
-                    status.textContent = 'Failed to send message. Please try again.';
-                    status.style.color = 'red';
-                    console.error('Error:', error);
-                });
-        }
-    </script>
 </body>
 
 </html>

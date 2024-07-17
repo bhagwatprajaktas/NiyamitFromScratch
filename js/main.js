@@ -126,3 +126,64 @@ function autoScroll() {
 }
 
 document.addEventListener('DOMContentLoaded', autoScroll);
+
+
+let index = 0;
+
+function showSlide(idx) {
+    const slides = document.querySelectorAll('.carouselTestimonial-item');
+    if (idx >= slides.length) {
+        index = 0;
+    } else if (idx < 0) {
+        index = slides.length - 1;
+    } else {
+        index = idx;
+    }
+
+    const offset = -index * 100;
+    document.querySelector('.carouselTestimonial-inner').style.transform = `translateX(${offset}%)`;
+
+    slides.forEach((slide, i) => {
+        slide.classList.toggle('active', i === index);
+    });
+}
+
+function moveNext() {
+    showSlide(index + 1);
+}
+
+function movePrev() {
+    showSlide(index - 1);
+}
+
+setInterval(() => {
+    moveNext();
+}, 3000);
+
+document.addEventListener('DOMContentLoaded', () => {
+    showSlide(index);
+});
+
+
+function handleSubmit(event) {
+    event.preventDefault();
+    const status = document.getElementById('status');
+    const formData = new FormData(document.getElementById('contact-form'));
+
+    fetch('https://script.google.com/macros/s/AKfycbx9bontjvaT1m9UzJQiag2dEzs_SmvuXm0aUhbPHnvHivBlRbF4y01vCqprNX8grBbu3w/exec', {
+        method: 'POST',
+        body: formData
+    })
+        .then(response => response.text())
+        .then(text => {
+            status.textContent = 'Message sent successfully!';
+            status.style.color = 'green';
+            status.style.paddingTop = '20px';
+            document.getElementById('contact-form').reset();
+        })
+        .catch(error => {
+            status.textContent = 'Failed to send message. Please try again.';
+            status.style.color = 'red';
+            console.error('Error:', error);
+        });
+}

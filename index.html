@@ -124,7 +124,7 @@
                                 class="fab fa-linkedin-in"></i></a>
                         <a class="btn btn-sm-square btn-primary ms-2" href="" target="_blank"><i
                                 class="fab fa-youtube"></i></a>
-                        <a class="btn btn-sm-square btn-primary ms-2" href="https://wa.me/919535444881"
+                        <a class="btn btn-sm-square btn-primary ms-2" href="https://wa.me/919880222998?text=Hello%2C%20I%20would%20like%20to%20book%20an%20Appointment."
                             target="_blank"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
@@ -144,10 +144,10 @@
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-lg-7 text-start">
-                                    <h1 class="display-1 text-white animated slideInRight mb-3">Our Packages</h1>
+                                    <h3 class="text-white">We value your trust and are committed to earning it every day.</h3>
                                     <!-- <p class="mb-5 animated slideInRight">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue, iaculis id elit eget, ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu quis, fringilla risus.</p> -->
-                                    <a href="packages.html"
-                                        class="btn btn-primary py-3 px-5 animated slideInRight">Explore More</a>
+                                    <!-- <a href="packages.html"
+                                        class="btn btn-primary py-3 px-5 animated slideInRight">Explore More</a> -->
                                 </div>
                             </div>
                         </div>
@@ -169,55 +169,56 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-            </button>
+            </button> -->
         </div>
     </div>
     <!-- Carousel End -->
 
 
 
-
+    <!-- Offers Carousel Start -->
 
     <div class="container-fluid header-carousel px-0 mb-5">
         <div class="carousel1">
             <div class="carousel-inner1">
                 <!-- Original slides -->
                 <div class="carousel-item1">
-                    <a  href="packages.html">
+                    <a href="packages.html">
                         <img src="img/offers.jpeg" alt="Image">
                     </a>
-                </div> 
+                </div>
                 <div class="carousel-item1">
-                    <a  href="packages.html">
+                    <a href="packages.html">
                         <img src="img/offers.jpeg" alt="Image">
                     </a>
-                </div> 
+                </div>
                 <div class="carousel-item1">
-                    <a  href="packages.html">
+                    <a href="packages.html">
                         <img src="img/offers.jpeg" alt="Image">
                     </a>
-                </div> 
+                </div>
                 <div class="carousel-item1">
-                    <a  href="packages.html">
+                    <a href="packages.html">
                         <img src="img/offers.jpeg" alt="Image">
                     </a>
-                </div> 
+                </div>
                 <div class="carousel-item1">
-                    <a  href="packages.html">
+                    <a href="packages.html">
                         <img src="img/offers.jpeg" alt="Image">
                     </a>
-                </div> 
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- Offers Carousel End -->
 
 
 
@@ -371,7 +372,7 @@
                                 <!-- <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span> -->
                             </div>
                         </div>
-                        <a class="btn btn-primary py-3 px-5 wow fadeIn" data-wow-delay="0.5s" href="">Explore More</a>
+                        <a class="btn btn-primary py-3 px-5 wow fadeIn" data-wow-delay="0.5s" href="about.html">Explore More</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -574,45 +575,59 @@
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
                     <h2 class="mb-4">Online Appoinment</h2>
                     <div class="row g-3">
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                <label for="name">Your Name</label>
+                        <form id="contact-form" onsubmit="handleSubmit(event)">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="name" name="name"
+                                            placeholder="Your Name">
+                                        <label for="name">Your Name</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="Your Email">
+                                        <label for="email">Your Email</label>
+                                    </div>
+                                </div>
+                                <!-- <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                        <label for="subject">Subject</label>
+                                    </div>
+                                </div> -->
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="phone" name="phone"
+                                            placeholder="Phone">
+                                        <label for="phone">Phone</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <select class="form-select" id="service" name="service" placeholder="Service">
+                                            <option value="inquire">Inquire</option>
+                                            <option value="home">Home Collection</option>
+                                            <option value="lab">Lab Appointment</option>
+                                        </select>
+
+                                        <label for="service">Service</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message"
+                                            name="message" style="height: 200px"></textarea>
+                                        <label for="message">Message</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary py-3 px-5" type="submit">Send Message</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="email" class="form-control" id="mail" placeholder="Your Email">
-                                <label for="mail">Your Email</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <input type="text" class="form-control" id="mobile" placeholder="Your Mobile">
-                                <label for="mobile">Your Mobile</label>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="form-floating">
-                                <select class="form-select" id="service">
-                                    <option selected>Pathology Testing</option>
-                                    <option value="">Microbiology Tests</option>
-                                    <option value="">Biochemistry Tests</option>
-                                    <option value="">Histopatology Tests</option>
-                                </select>
-                                <label for="service">Choose A Service</label>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="form-floating">
-                                <textarea class="form-control" placeholder="Leave a message here" id="message"
-                                    style="height: 130px"></textarea>
-                                <label for="message">Message</label>
-                            </div>
-                        </div>
-                        <div class="col-12 text-center">
-                            <button class="btn btn-primary w-100 py-3" type="submit">Submit Now</button>
-                        </div>
+                        </form>
+                        <div id="status"></div>
                     </div>
                 </div>
             </div>
@@ -629,16 +644,21 @@
                     <img class="img-fluid" src="img/team-1.jpeg" alt="">
                 </div>
                 <div class="col-md-6 wow fadeIn" data-wow-delay="0.5s">
-                    <h1 class="display-6 mb-3">Dr. Priyanka</h1>
+                    <h1 class="display-6 mb-3">Dr. Priyanka Shrikrishna Somwanshi</h1>
                     <p class="mb-1">CEO & Founder</p>
-                    <p class="mb-5">Labsky, New York, USA</p>
+                    <p class="mb-5">Niyamit Health Diagnostic</p>
                     <h3 class="mb-3">Biography</h3>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue,
-                        iaculis id elit eget, ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu
-                        quis, fringilla risus. Pellentesque eu consequat augue.</p>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue,
-                        iaculis id elit eget, ultrices pulvinar tortor. Quisque vel lorem porttitor, malesuada arcu
-                        quis, fringilla risus. Pellentesque eu consequat augue.</p>
+                    <p class="mb-4">Dr. Priyanka Shrikrishna Somwanshi, founder of Niyamit Health Diagnostics and
+                        Research, completed her MBBS at GSMC KEMH Mumbai, renowned for its ethical and quality
+                        standards. She earned her MD in Pathology from VIMS and RC Bangalore, driven by a passion for
+                        basic life sciences.</p>
+                    <p class="mb-4">Dr. Somwanshi has over 15 years of experience in pathology, with special interests
+                        in cytology, FNAC, and semen analysis. She has presented award-winning research at national
+                        conferences and participated in various international conferences.</p>
+                    <p class="mb-4">Her career includes roles as an authorized signatory in top Bangalore labs,
+                        successfully handling NABL, CAP, and GCC audits. She has also researched AI applications in
+                        pathology, particularly Ki-67 scoring in sarcomas.</p>
+
                     <!-- <div class="d-flex">
                         <a class="btn btn-lg-square btn-primary me-2" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-lg-square btn-primary me-2" href=""><i class="fab fa-twitter"></i></a>
@@ -721,97 +741,108 @@
     </div>
     <!-- Team End -->
 
-
     <!-- Testimonial Start -->
-    <div class="container-fluid testimonial py-5">
-        <div class="container pt-5">
-            <div class="row gy-5 gx-0">
-                <div class="col-lg-6 pe-lg-5 wow fadeIn" data-wow-delay="0.3s">
-                    <h1 class="display-6 text-white mb-4">What Clients Say About Our Lab Services!</h1>
-                    <!-- <p class="text-white mb-5">This section features feedback from our patients about their experiences with our pathology lab. Read on to learn about the quality of our services, the professionalism of our staff, and the overall satisfaction of our patients. These testimonials provide insights into the efficiency, accuracy, and customer service we strive to offer.</p> -->
-                    <!-- <a href="" class="btn btn-primary py-3 px-5">More Testimonials</a> -->
-                </div>
-                <div class="col-lg-6 mb-n5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="bg-white p-5">
-                        <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.1s">
-                            <div class="testimonial-item">
-                                <div class="icon-box-primary mb-4">
-                                    <i class="bi bi-chat-left-quote text-dark"></i>
-                                </div>
-                                <p class="fs-5 mb-4">"Convenient location and easy appointment scheduling."
-                                </p>
-                                <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0" src="img/team-2.jpeg" alt="">
-                                    <div class="ps-3">
-                                        <h5 class="mb-1">Tejas Khele</h5>
-                                        <!-- <span class="text-primary">Profession</span> -->
-                                    </div>
-                                </div>
+    <div class="container-fluid testimonial py-5" style="text-align: center;">
+        <div class="p-5">
+            <div>
+                <h1 class="display-6 text-white mb-4">What Clients Say About Our Lab Services!</h1>
+            </div>
+            <div class="carouselTestimonial">
+                <div class="carouselTestimonial-inner">
+                    <div class="carouselTestimonial-item">
+                        <div class="testimonial-item">
+                            <div class="icon-box-primary mb-4">
+                                <i class="bi bi-chat-left-quote text-dark"></i>
                             </div>
-                            <div class="testimonial-item">
-                                <div class="icon-box-primary mb-4">
-                                    <i class="bi bi-chat-left-quote text-dark"></i>
-                                </div>
-                                <p class="fs-5 mb-4"> "Clean facility and professional technicians. Highly recommend."
-                                </p>
-                                <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0" src="img/team-3.jpeg" alt="">
-                                    <div class="ps-3">
-                                        <h5 class="mb-1">Prajakta Bhagwat</h5>
-                                        <!-- <span class="text-primary">Profession</span> -->
-                                    </div>
-                                </div>
-                            </div>
+                            <p class="fs-5 mb-4">"Convenient location and easy appointment scheduling."
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0" src="img/team-2.jpeg" alt="">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Tejas Khele</h5>
 
-                            <div class="testimonial-item">
-                                <div class="icon-box-primary mb-4">
-                                    <i class="bi bi-chat-left-quote text-dark"></i>
-                                </div>
-                                <p class="fs-5 mb-4">"Received detailed explanations of my results from the
-                                    pathologist."
-                                </p>
-                                <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0" src="img/team-4.jpeg" alt="">
-                                    <div class="ps-3">
-                                        <h5 class="mb-1">Deepali Sangpal</h5>
-                                        <!-- <span class="text-primary">Profession</span> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="testimonial-item">
-                                <div class="icon-box-primary mb-4">
-                                    <i class="bi bi-chat-left-quote text-dark"></i>
-                                </div>
-                                <p class="fs-5 mb-4">"Quick and efficient service. Got my results within 24 hours!"
-                                </p>
-                                <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0" src="img/team-5.jpeg" alt="">
-                                    <div class="ps-3">
-                                        <h5 class="mb-1">Nikhil Malwatkar</h5>
-                                        <!-- <span class="text-primary">Profession</span> -->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="testimonial-item">
-                                <div class="icon-box-primary mb-4">
-                                    <i class="bi bi-chat-left-quote text-dark"></i>
-                                </div>
-                                <p class="fs-5 mb-4">"Affordable prices and accurate reports. Very satisfied"
-                                </p>
-                                <div class="d-flex align-items-center">
-                                    <img class="flex-shrink-0" src="img/team-6.jpeg" alt="">
-                                    <div class="ps-3">
-                                        <h5 class="mb-1">Hemant Parate</h5>
-                                        <!-- <span class="text-primary">Profession</span> -->
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="carouselTestimonial-item">
+                        <div class="testimonial-item">
+                            <div class="icon-box-primary mb-4">
+                                <i class="bi bi-chat-left-quote text-dark"></i>
+                            </div>
+                            <p class="fs-5 mb-4"> "Clean facility and professional technicians. Highly
+                                recommend."
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0" src="img/team-3.jpeg" alt="">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Prajakta Bhagwat</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carouselTestimonial-item">
+                        <div class="testimonial-item">
+                            <div class="icon-box-primary mb-4">
+                                <i class="bi bi-chat-left-quote text-dark"></i>
+                            </div>
+                            <p class="fs-5 mb-4">"Received detailed explanations of my results from the
+                                pathologist."
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0" src="img/team-4.jpeg" alt="">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Deepali Sangpal</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carouselTestimonial-item">
+                        <div class="testimonial-item">
+                            <div class="icon-box-primary mb-4">
+                                <i class="bi bi-chat-left-quote text-dark"></i>
+                            </div>
+                            <p class="fs-5 mb-4">"Quick and efficient service. Got my results within 24
+                                hours!"
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0" src="img/team-5.jpeg" alt="">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Nikhil Malwatkar</h5>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carouselTestimonial-item">
+                        <div class="testimonial-item">
+                            <div class="icon-box-primary mb-4">
+                                <i class="bi bi-chat-left-quote text-dark"></i>
+                            </div>
+                            <p class="fs-5 mb-4">"Affordable prices and accurate reports. Very
+                                satisfied"
+                            </p>
+                            <div class="d-flex align-items-center">
+                                <img class="flex-shrink-0" src="img/team-6.jpeg" alt="">
+                                <div class="ps-3">
+                                    <h5 class="mb-1">Hemant Parate</h5>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <!-- <button class="prev" onclick="movePrev()">&#10094;</button>
+                    <button class="next" onclick="moveNext()">&#10095;</button> -->
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Testimonial End -->
 
 
@@ -876,10 +907,6 @@
                 <div class="col-md-6 text-center text-md-start">
                     <p class="mb-0">&copy; <a href="#">Niyamit Health Diagnostic</a>. All Rights Reserved.</p>
                 </div>
-                <div class="col-md-6 text-center text-md-end">
-                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    <p class="mb-0">Designed by <a href="https://htmlcodex.com">HTML Codex</a></p>
-                </div>
             </div>
         </div>
     </div>
@@ -892,7 +919,7 @@
             class="bi bi-arrow-up"></i></a>
     <a style="background-color: #25D366 !important;"
         class="btn btn-lg btn-primary btn-lg-square rounded-circle whatsapp-static"
-        href="https://wa.me/917028809073?text=WelcomeNiyamit" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        href="https://wa.me/919880222998?text=Hello%2C%20I%20would%20like%20to%20book%20an%20Appointment." target="_blank"><i class="fab fa-whatsapp"></i></a>
 
 
     <!-- JavaScript Libraries -->
