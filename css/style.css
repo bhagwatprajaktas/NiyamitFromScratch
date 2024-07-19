@@ -228,6 +228,8 @@
 .page-header {
     background: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)), url(../img/testimonial.jpg) center center no-repeat;
     background-size: cover;
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
 }
 
 .page-header .breadcrumb-item+.breadcrumb-item::before {
@@ -620,7 +622,7 @@
 }
 
 .btn-play:after {
-    background: #dc3545;
+    background: #29909e;
 }
    /* CSS for basic styling */
     .text-element {
