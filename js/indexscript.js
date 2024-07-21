@@ -60,9 +60,16 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
- // Pause video when modal is hidden
- document.getElementById('videoModal').addEventListener('hidden.bs.modal', function () {
+// Pause video when modal is hidden
+document.getElementById('videoModal').addEventListener('hidden.bs.modal', function () {
     var video = document.getElementById('modalVideo');
     video.pause();
+});
+
+// Ensure the video is paused when navigating back to the index page
+window.addEventListener('pageshow', function (event) {
+    if (event.persisted) {
+        var video = document.getElementById('modalVideo');
+        video.pause();
+    }
 });
