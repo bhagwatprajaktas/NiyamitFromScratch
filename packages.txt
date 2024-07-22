@@ -60,3 +60,10 @@ Parameters: 13
 Price: Rs. 1999
 Description:
 The Mineral Profile comprises a comprehensive set of tests designed to assess and monitor essential mineral and vitamin levels in the body. This profile is recommended for individuals experiencing non-specific weakness. Utilizing the Mineral Profile helps identify deficiencies and imbalances, facilitating accurate diagnosis, timely intervention, and effective management of overall health.
+
+Name: Arthritic Profile
+Test: CBC, CRP, Calcium, Phosphorous, Uric acid, RA factor, ANA, A-CCP
+Parameters: 28
+Price: Rs. 2499
+Description:
+If you experience consistent joint pain, getting an Arthritic Profile done is essential. The Arthritic Profile includes a comprehensive set of tests designed to assess and monitor various aspects of joint and bone health, aiding in the diagnosis and management of arthritis and related conditions. Utilizing the Arthritic Profile is crucial for accurate diagnosis, timely intervention, and effective management of arthritis and related conditions. Regular screening with this profile helps identify underlying issues, enabling prompt and appropriate treatment.
